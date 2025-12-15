@@ -25,6 +25,7 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
+          python -m pytest install --upgrade pytest
 
       # Step 4: Run tests
       - name: Run tests
