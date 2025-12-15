@@ -24,12 +24,11 @@ jobs:
       # Step 3: Install dependencies
       - name: Install dependencies
         run: |
-          python3 -m pip install --upgrade pip
-          pip install -r requirements.txt
+          python -m pip install --upgrade pip
 
       # Step 4: Run tests
-      - name: Run unit tests
-        run: pytest --test_calculator.py
+      - name: Run tests
+        run: python test_calculator.py -v
 
       # Step 5: Upload test report as artifact
       - name: Upload test report
