@@ -26,11 +26,9 @@ pipeline {
             }
         }
 
-        stage('Install Dependencies') {
+        stage('Checks Dependencies') {
             steps {
                 sh '''
-                sudo apt install python3-pip
-                sudo apt install python3-pytest
                 pytest --version
                 pip --version
                 '''
