@@ -29,7 +29,10 @@ pipeline {
         stage('Install Dependencies') {
             steps {
                 sh '''
+                sudo apt install python3-pip
+                sudo apt install python3-pytest
                 pytest --version
+                pip --version
                 '''
             }
         }
