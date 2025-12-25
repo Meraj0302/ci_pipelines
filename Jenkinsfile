@@ -13,8 +13,7 @@ pipeline {
 
         stage('Code Checkout') {
             steps {
-                git branch: 'main',
-                    url: 'https://github.com/Meraj0302/ci_pipelines.git'
+                git branch: 'main'
             }
         }
 
