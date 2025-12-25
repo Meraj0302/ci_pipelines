@@ -14,6 +14,7 @@ pipeline {
         stage('Code Checkout') {
             steps {
                 git branch: 'main'
+                    url: 'https://github.com/meraj0302/calculator-ci.git'
             }
         }
 
